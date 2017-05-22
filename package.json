@@ -1,0 +1,23 @@
+{
+  "name": "ramsey-brown-mean-project",
+  "version": "1.0.0",
+  "description": "Q&A MEAN app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StormyRamsey/Ramsey-Brown-Mean-Project.git"
+  },
+  "author": "StormyRamsey PaulBrown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StormyRamsey/Ramsey-Brown-Mean-Project/issues"
+  },
+  "homepage": "https://github.com/StormyRamsey/Ramsey-Brown-Mean-Project#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "mongoose": "^4.10.1"
+  }
+}
