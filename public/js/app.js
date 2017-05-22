@@ -12,6 +12,6 @@ angular
     $stateProvider
     .state('Welcome to Book-It!', {
       url: '/',
-      tempplateURL: ''
+      templateURL: ''
     })
   }
