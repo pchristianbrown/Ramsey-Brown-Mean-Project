@@ -28,20 +28,17 @@ var QuestionSchema = new Schema({
 var Question = mongoose.model("Question", QuestionSchema);
 var Answer = mongoose.model("Answer", AnswerSchema);
 
-var winterNights = new Question({title:"Winter Nights", body:"What did you think about Winter Nights?"});
-var answer1 = new Answer({ body:"Yes this is a great book!" });
+// var winterNights = new Question({title:"Winter Nights", body:"What did you think about Winter Nights?"});
+// var answer1 = new Answer({ body:"Yes this is a great book!" });
+//
+// winterNights.answer.push(answer1)
+//
+// winterNights.save((err, question) =>{
+//   if(err){
+//     console.log(err)
+//   } else {
+//     console.log(question + "was saved")
+//   }
+// })
 
-winterNights.answer.push(answer1)
-
-winterNights.save((err, question) =>{
-  if(err){
-    console.log(err)
-  } else {
-    console.log(question + "was saved")
-  }
-})
-
-module.exports = {
-  Question: Question,
-  Answer: Answer
-};
+module.exports = mongoose;

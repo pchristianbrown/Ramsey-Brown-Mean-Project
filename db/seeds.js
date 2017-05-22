@@ -1,8 +1,7 @@
-var mongoose = require('mongoose');
-var Schema = require("../db/schema.js");
+var mongoose = require("../db/schema.js");
 
-var Question = Schema.Question
-var Answer = Schema.Answer
+var Question = mongoose.model('Question')
+var Answer = mongoose.model('Answer')
 
 Question.remove({}, err =>{
   if(err){
@@ -23,10 +22,9 @@ var theColdestWinterEver = new Question({title:"The Coldest Winter Ever", body:"
 var answer = new Answer({ body: "This book is great!"})
 
 var questions = [midnight, theSellout, theColdestWinterEver]
-var answers = [answer]
 
 for(var i = 0; i < questions.length; i++){
-  questions[i].answer.push(answers[i], answers[i])
+  questions[i].answer.push(answer)
 
   questions[i].save((err, question) => {
       if (err){
