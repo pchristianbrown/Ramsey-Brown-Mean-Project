@@ -1,5 +1,5 @@
 angular
-  .module("whenPresident", [
+  .module("questions", [
     "ui.router",
     "ngResource"
   ])
@@ -10,8 +10,8 @@ angular
 
   function Router ($stateProvider) {
     $stateProvider
-    .state('Welcome to Book-It!', {
+    .state('welcome', {
       url: '/',
-      templateURL: ''
+      templateURL: '/public/js/ng-views/welcome.html'
     })
   }
